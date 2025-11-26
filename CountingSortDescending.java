@@ -10,13 +10,10 @@ public class CountingSortDescending {
         int[] count = new int[range];
         int[] output = new int[arr.length];
 
-        // Hitung frekuensi
         for (int num : arr) count[num - min]++;
 
-        // Akumulasi untuk descending
         for (int i = range - 2; i >= 0; i--) count[i] += count[i + 1];
 
-        // Bangun array output
         for (int i = arr.length - 1; i >= 0; i--) {
             output[count[arr[i] - min] - 1] = arr[i];
             count[arr[i] - min]--;
