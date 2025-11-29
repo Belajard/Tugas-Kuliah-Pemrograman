@@ -23,7 +23,7 @@ public class CountingSortDescending {
     }
 
     public static void main(String[] args) {
-        int[] arr = {12, 5, 23, 8, 15, 3, 19, 7};
+        int[] arr = {27, 63, 14, 89, 42, 56, 71, 35};
 
         System.out.println("Sebelum sorting:");
         for (int num : arr) System.out.print(num + " ");
